@@ -23,4 +23,4 @@ En este proyecto vamos a implementra navegación de el framework usando un route
 }) 
 ```
 <h2 id="stateProvider">stateProvider</h2>
-[Inicio][#inicio]
+[Inicio](#inicio)
