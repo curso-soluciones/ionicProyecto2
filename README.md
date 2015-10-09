@@ -1,7 +1,7 @@
 # ionicProyecto2
 <div id="inicio"></div>
 [Introducción](#Introduccion)<br>
-[Router Provider](#stateProvider)<br>
+[Configuración básica](#configuracion)<br>
 
 <h1>Proyecto  que muestra cómo implementar navegación con stateProvider y urlRouterProvider</h1>
 
@@ -23,8 +23,23 @@ En el index que se generó en el index de ionic vas a sustituir las equitas de a
   </body>
 ```
 
+<h2 id="configuracion">Configuración básica</h2>
+[Inicio](#inicio)
+
 Una vez hecho esto vamos a agregar una configuración en nuestro archivo **app.js**, esta configuración va a hacer que funcione el router para la navegación. Para ello es necesario que en tu proyecto generes dos nuevas páginas html. A la primera le vas a llamar **inicio.html** y a la segunda **menu.html**.
 
+Vas a modifica el contenido de la página **inicio.html**. El contenido del archivo  debe de ser el siguiente
+**inicio.html**
+```html
+    <body>
+        <div>Pagina de inicio</div>
+        <button class="button button-assertive" ui-sref="vista2">Ir al Menu</button>
+    </body>
+```
+
+Lo más sobresaliente de esta página es la opcion **ui-sref="vista2"**, esta etiqueta lo que hace es que indica al boton que la navegación se realizará a traves de la referencia **vista2**, la cual es proveída por por la configuración del **urlRouterProvide**, tal como lo muestra el archivo **app.js** donde se configura el router.
+
+**app.js**
 ```javascript
 .config(function($stateProvider,$urlRouterProvider){
     $stateProvider
@@ -41,5 +56,4 @@ Una vez hecho esto vamos a agregar una configuración en nuestro archivo **app.j
     
 }) 
 ```
-<h2 id="stateProvider">stateProvider</h2>
-[Inicio](#inicio)
+
