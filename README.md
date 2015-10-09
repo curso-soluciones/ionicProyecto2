@@ -9,7 +9,7 @@
 En este proyecto vamos a implementra navegación de el framework usando un routerProvider muy similar al usado en algularJS
 Primero vas a crear un proyecto en ionic en blanco y le vas a poner de nombre **ionicProyecto2**, vas a hacer lo mismo en el netbbeans creando una  aplicación en blanco de tipo html5, vas a borra el indes y copias los contenidos de la carpeta **wwww** que se generón en ionic.
 
-En el index que se generó en el index de ionic vas a sustituir las equitas de apertura y de cierre **<ion-cotent>** por las etiquetas **<ion-nav-view class="has-header"></ion-nav-view>**, tu contenido del index debera de quedar como sigue
+En el index que se generó en el index de ionic vas a sustituir las equitas de apertura y de cierre **<ion-cotent>** por las etiquetas **ion-nav-view**, tu contenido del index debera de quedar como sigue
 ```html
   <body ng-app="starter">
 
