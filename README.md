@@ -26,7 +26,7 @@ En el index que se generó en el index de ionic vas a sustituir las equitas de a
 ```
 
 <h2 id="configuracion">Configuración básica</h2>
-[Inicio](#inicio)
+
 
 Una vez hecho esto vamos a agregar una configuración en nuestro archivo **app.js**, esta configuración va a hacer que funcione el router para la navegación. Para ello es necesario que en tu proyecto generes dos nuevas páginas html. A la primera le vas a llamar **inicio.html** y a la segunda **menu.html**.
 
@@ -59,4 +59,4 @@ Lo más sobresaliente de esta página es la opcion **ui-sref="vista2"**, esta et
     
 }) 
 ```
-
+[Inicio](#inicio)
