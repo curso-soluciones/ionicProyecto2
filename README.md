@@ -1,9 +1,13 @@
 # Tutorial para el proyecto de navegación básica con **ionic**
+
+Proyecto  que muestra cómo implementar navegación con stateProvider y urlRouterProvider
+
+<h3>Contenido</h3>
 <div id="inicio"></div>
 [Introducción](#Introduccion)<br>
 [Configuración básica](#configuracion)<br>
 
-<h2>Proyecto  que muestra cómo implementar navegación con stateProvider y urlRouterProvider</h2>
+
 
 <h2 id="introduccion">Introducción</h2>
 En este proyecto vamos a implementra navegación de el framework usando un routerProvider muy similar al usado en algularJS
