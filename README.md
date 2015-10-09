@@ -2,8 +2,8 @@
 <ul>
 <li>Introducción</li>
 <li><a href="#stateProvider">stateProvider</a></li>
-<li>urlRouterProvider</li>
 </ul>
+(Router Provider)[#stateProvider]
 
 <h1>Proyecto  que muestra cómo implementar navegación con stateProvider y urlRouterProvider</h1>
 
