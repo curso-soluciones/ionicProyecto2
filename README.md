@@ -4,7 +4,7 @@
 
 <h2>Introducción</h2>
 En este proyecto vamos a implementra navegación de el framework usando un routerProvider muy similar al usado en algularJS
-´´
+```
 .config(function($stateProvider,$urlRouterProvider){
     $stateProvider
             .state('vista1',{
@@ -19,4 +19,4 @@ En este proyecto vamos a implementra navegación de el framework usando un route
             $urlRouterProvider.otherwise('/vista1');
     
 }) 
-´´
+```
