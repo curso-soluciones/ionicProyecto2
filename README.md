@@ -1,8 +1,5 @@
 # ionicProyecto2
-<ul>
-<li>Introducción</li>
-<li><a href="#stateProvider">stateProvider</a></li>
-</ul>
+<div id="inicio"></div>
 [Router Provider](#stateProvider)
 
 <h1>Proyecto  que muestra cómo implementar navegación con stateProvider y urlRouterProvider</h1>
@@ -26,3 +23,4 @@ En este proyecto vamos a implementra navegación de el framework usando un route
 }) 
 ```
 <h2 id="stateProvider">stateProvider</h2>
+[Inicio][#inicio]
