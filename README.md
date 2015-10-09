@@ -1,4 +1,4 @@
-# ionicProyecto2
+# Tutorial para el proyecto de navegación básica con **ionic**
 <div id="inicio"></div>
 [Introducción](#Introduccion)<br>
 [Configuración básica](#configuracion)<br>
