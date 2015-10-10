@@ -48,7 +48,7 @@ Despues vas a crear otra pagina html, a esta le pondras de nombre **otra.html** 
 **otra.html**
 ```html
     <body>
-        <div>Pagina de inicio</div>
+        <div>Pagina de menu</div>
         <button class="button button-assertive" ui-sref="vista1">Ir pagina inicial</button>
     </body>
 ```
