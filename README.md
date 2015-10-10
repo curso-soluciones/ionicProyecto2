@@ -44,23 +44,28 @@ Vas a modifica el contenido de la página **inicio.html**. El contenido del arch
     </body>
 ```
 
-Lo más sobresaliente de esta página es la opcion **ui-sref="vista2"**, esta etiqueta lo que hace es que indica al boton que la navegación se realizará a traves de la referencia **vista2**, la cual es proveída por por la configuración del **urlRouterProvide**, tal como lo muestra el archivo **app.js** donde se configura el router.
+Despues vas a crear otra pagina html, a esta le pondras de nombre **otra.html** va a agregar el siguiente codigo html en el **body** de la misma.
+**otra.html**
+```html
+    <body>
+        <div>Pagina de inicio</div>
+        <button class="button button-assertive" ui-sref="vista1">Ir pagina inicial</button>
+    </body>
+```
+
+Lo más sobresaliente de estas páginas es la opcion **ui-sref="vista2"**, esta etiqueta lo que hace es que indica al boton que la navegación se realizará a traves de la referencia **vista2**, la cual es proveída por por la configuración del **urlRouterProvide**, tal como lo muestra el archivo **app.js** donde se configura el router.
 
 **app.js**
 ```javascript
-.config(function($stateProvider,$urlRouterProvider){
-    $stateProvider
-            .state('vista1',{
-                url:'/vista1',
-                templateUrl:'inicial.html'
-                }
-            )
-            .state('vista2',{
-                url:'/vista2',
-                templateUrl:'otra.html'
-            })
-            $urlRouterProvider.otherwise('/vista1');
-    
-}) 
+.config(function($stateProvider, $urlRouterProvider){
+    $stateProvider.state('vista1',{
+        url:'/vista1',
+        templateUrl:'inicio.html'
+    }).state('vista2',{
+        url:'/vista2',
+        templateUrl:'otra.html'
+    })
+    $urlRouterProvider.otherwise("/vista1");
+});
 ```
 [Inicio](#inicio)
