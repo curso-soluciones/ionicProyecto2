@@ -15,5 +15,14 @@ angular.module('starter', ['ionic'])
     if(window.StatusBar) {
       StatusBar.styleDefault();
     }
-  });
-})
+  })
+}).config(function($stateProvider, $urlRouterProvider){
+    $stateProvider.state('vista1',{
+        url:'/vista1',
+        templateUrl:'inicio.html'
+    }).state('vista2',{
+        url:'/vista2',
+        templateUrl:'otra.html'
+    })
+    $urlRouterProvider.otherwise("/vista1");
+});
