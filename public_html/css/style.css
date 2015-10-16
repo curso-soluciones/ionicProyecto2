@@ -1,1 +1,23 @@
 /* Empty. Add your own CSS if you like */
+
+#superior-izquierda{
+    float: left;
+    text-align: center;
+    padding:40px;
+}
+#superior-derecha{
+    float:right;
+     text-align: center;
+    padding:40px;
+}
+#inferior-izquierda{
+    clear: both;
+    float:left;
+     text-align: center;
+    padding:40px;
+}
+#inferior-derecha{
+    float:right;
+     text-align: center;
+    padding:40px;
+}
