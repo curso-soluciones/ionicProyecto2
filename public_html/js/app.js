@@ -25,4 +25,22 @@ angular.module('starter', ['ionic'])
         templateUrl:'otra.html'
     })
     $urlRouterProvider.otherwise("/vista1");
+}).controller('ctrlPrincipal',function($scope, $http, $filter){
+console.log("holaaaa");
+    $scope.temperatura='';
+    $scope.uv='';
+   // $scope.date = new Date();
+   //   $scope.ddMMMMyyyy = $filter('date')(new Date(), 'dd, MMMM yyyy');
+     $scope.hh = parseInt($filter('date')(new Date(), 'HH'));
+    console.log("La hora es "+$scope.hh);
+ $http.get('http://campitos.elasticbeanstalk.com/estacion/temperatura').success(function(data){
+        // console.log(data.length+" temperatura: "+data[12].temperatura);
+         $scope.temperatura=data[$scope.hh].temperatura;
+         $scope.uv=data[$scope.hh].uv;
+         if($scope.uv<5)$scope.imagensita="img/green_light.png";
+if($scope.uv>=5 & $scope.uv<10)$scope.imagensita="img/yellow_light.png";
+if($scope.uv>=10)$scope.imagensita="img/red_light.png";
+     });
+
+
 });
